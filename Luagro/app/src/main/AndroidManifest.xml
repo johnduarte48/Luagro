@@ -12,7 +12,58 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Luagro">
         <activity
-            android:name=".MainActivity"
+            android:name=".seller.OrderInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".seller.SellerProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.UserManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ReportsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.UserCrudActivity"
+            android:exported="false" />
+        <activity
+            android:name=".seller.OrderDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".seller.AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".seller.SellerMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".buyer.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".buyer.ConfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".buyer.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".buyer.ProductDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".buyer.BuyerMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".common.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +71,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

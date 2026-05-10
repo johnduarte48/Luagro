@@ -1,4 +1,9 @@
 package com.example.luagro.model
 
-class Product {
-}
+data class Product(
+
+    val name: String,
+    val price: String,
+    val image: Int
+
+)

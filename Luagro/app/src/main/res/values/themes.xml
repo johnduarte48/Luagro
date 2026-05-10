@@ -1,9 +1,32 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Luagro" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Luagro" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.Luagro" parent="Base.Theme.Luagro" />
+    <style name="Theme.Luagro" parent="Theme.Material3.Light.NoActionBar">
+
+        <!-- Primary -->
+
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorPrimaryContainer">@color/dark_green</item>
+
+        <!-- Secondary -->
+
+        <item name="colorSecondary">@color/accent_green</item>
+
+        <!-- Status Bar -->
+
+        <item name="android:statusBarColor">
+            @color/dark_green
+        </item>
+
+        <!-- Navigation Bar -->
+
+        <item name="android:navigationBarColor">
+            @color/primary_green
+        </item>
+
+    </style>
 </resources>

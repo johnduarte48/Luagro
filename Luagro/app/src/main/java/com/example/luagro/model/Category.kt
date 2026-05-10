@@ -1,4 +1,8 @@
 package com.example.luagro.model
 
-class Category {
-}
+data class Category(
+
+    val name: String,
+    val image: Int
+
+)

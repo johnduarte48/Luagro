@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Colores principales -->
+
+    <color name="primary_green">#2E7D32</color>
+    <color name="dark_green">#1B5E20</color>
+    <color name="light_green">#A5D6A7</color>
+    <color name="accent_green">#66BB6A</color>
+
+    <!-- Colores Neutros -->
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="medium_gray">#DADADA</color>
+    <color name="dark_gray">#616161</color>
+
+    <!-- Colores de Textos -->
+
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+
+    <!-- Colores de Estados -->
+
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FFC107</color>
+    <color name="error">#F44336</color>
 </resources>
