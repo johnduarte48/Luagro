@@ -36,6 +36,7 @@
             android:layout_marginStart="16dp">
 
             <TextView
+                android:id="@+id/txtOrderId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pedido #LA2026-013489"
@@ -58,11 +59,22 @@
                 android:textSize="18sp"
                 android:layout_marginTop="4dp"/>
 
+            <TextView
+                android:id="@+id/txtOrderTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$15.800"
+                android:textStyle="bold"
+                android:textColor="@color/primary_green"
+                android:textSize="20sp"
+                android:layout_marginTop="4dp"/>
+
         </LinearLayout>
 
         <!-- ESTADO -->
 
         <TextView
+            android:id="@+id/txtOrderStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Pendiente"

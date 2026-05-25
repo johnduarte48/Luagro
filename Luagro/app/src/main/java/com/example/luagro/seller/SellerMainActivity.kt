@@ -3,6 +3,7 @@ package com.example.luagro.seller
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -13,6 +14,12 @@ import com.example.luagro.R
 import com.example.luagro.adapter.ProductAdapter
 import com.example.luagro.buyer.ProfileActivity
 import com.example.luagro.model.Product
+import com.example.luagro.auth.LoginActivity
+import com.example.luagro.supabase.SupabaseClient.client
+import io.github.jan.supabase.gotrue.auth
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class SellerMainActivity : AppCompatActivity() {
 
@@ -32,6 +39,9 @@ class SellerMainActivity : AppCompatActivity() {
 
         val btnProfile =
             findViewById<Button>(R.id.btnProfile)
+
+        val btnLogout =
+            findViewById<ImageButton>(R.id.btnLogout)
 
         btnProducts.setOnClickListener {
 
@@ -75,6 +85,26 @@ class SellerMainActivity : AppCompatActivity() {
                 )
             )
 
+        }
+
+        btnLogout.setOnClickListener {
+
+            CoroutineScope(Dispatchers.IO).launch {
+
+                client.auth.signOut()
+
+                runOnUiThread {
+
+                    startActivity(
+                        Intent(
+                            this@SellerMainActivity,
+                            LoginActivity::class.java
+                        )
+                    )
+
+                    finish()
+                }
+            }
         }
 
     }

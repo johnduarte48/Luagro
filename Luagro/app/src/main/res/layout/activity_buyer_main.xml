@@ -10,7 +10,7 @@
 
     <!-- Scroll -->
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
@@ -43,7 +43,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Hola, Usuario 👋"
+                        android:text="Hola 👋"
                         android:textSize="28sp"
                         android:textStyle="bold"
                         android:textColor="@color/text_primary"/>
@@ -58,6 +58,14 @@
 
                 </LinearLayout>
 
+                <ImageButton
+                    android:id="@+id/btnLogout"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@android:color/transparent"
+                    android:src="@android:drawable/ic_lock_power_off"
+                    android:contentDescription="Cerrar sesión"/>
+
             </LinearLayout>
 
             <!-- BUSCADOR -->
@@ -69,6 +77,31 @@
                 android:hint="Buscar productos..."
                 android:padding="16dp"
                 android:background="@drawable/input_background"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <Button
+                    android:id="@+id/btnCart"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:text="Mi carrito"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/btnMyOrders"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="Mis compras"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
 
             <!-- CATEGORIAS -->
 
@@ -118,6 +151,7 @@
                     android:textStyle="bold"
                     android:textSize="24sp"/>
 
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -135,9 +169,21 @@
                 android:nestedScrollingEnabled="false"
                 android:layout_marginTop="16dp"/>
 
+            <!--<Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Cerrar sesión"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="24dp"/>-->
+
         </LinearLayout>
 
-    </ScrollView>
+
+
+    </androidx.core.widget.NestedScrollView>
 
     <!-- Bottom Navigation -->
 

@@ -59,6 +59,30 @@
                 android:background="@drawable/rounded_button"
                 android:layout_marginTop="12dp"/>
 
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Editar"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="8dp"/>
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Eliminar"
+                android:textColor="@color/white"
+                android:layout_marginTop="8dp"
+                app:backgroundTint="@color/danger_red"
+                app:cornerRadius="12dp"/>
+
+
+
         </LinearLayout>
 
     </LinearLayout>

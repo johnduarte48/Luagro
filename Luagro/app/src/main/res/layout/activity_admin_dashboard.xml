@@ -17,40 +17,49 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:gravity="center_vertical">
+            <!--android:orientation="horizontal"-->
 
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/logo_luagro"/>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logo_luagro"/>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginStart="16dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Hola, Usuario"
-                    android:textStyle="bold"
-                    android:textSize="28sp"
-                    android:textColor="@color/text_primary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hola 👋"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textColor="@color/text_primary"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Administrador"
-                    android:textSize="18sp"
-                    android:textColor="@color/text_secondary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Administrador"
+            android:textSize="18sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="4dp"/>
 
-            </LinearLayout>
+    </LinearLayout>
 
-        </LinearLayout>
+    <ImageButton
+        android:id="@+id/btnLogout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_lock_power_off"
+        android:contentDescription="Cerrar sesión"/>
 
-        <!-- Bienvenida -->
+</LinearLayout>
+
+<!-- Bienvenida -->
 
         <TextView
             android:layout_width="wrap_content"
@@ -179,6 +188,16 @@
             android:background="@drawable/rounded_button"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="24dp"/>
+
+        <!--<Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Cerrar sesión"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="24dp"/>-->
 
     </LinearLayout>
 

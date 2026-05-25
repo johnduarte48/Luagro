@@ -11,9 +11,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.luagro.R
 import com.example.luagro.buyer.ProductDetailActivity
 import com.example.luagro.model.Product
+import coil.load
 
 class ProductAdapter(
-    private val productList: List<Product>
+    private val productList: List<Product>,
+    private val showDeleteButton: Boolean = false,
+    private val onDeleteClick: ((Product) -> Unit)? = null,
+    private val onEditClick: ((Product) -> Unit)? = null
 ) : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
     class ProductViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -22,6 +26,9 @@ class ProductAdapter(
         val txtProductName: TextView = view.findViewById(R.id.txtProductName)
         val txtPrice: TextView = view.findViewById(R.id.txtPrice)
         val btnView: Button = view.findViewById(R.id.btnView)
+        val btnDelete: Button = view.findViewById(R.id.btnDelete)
+
+        val btnEdit: Button = view.findViewById(R.id.btnEdit)
 
     }
 
@@ -34,24 +41,98 @@ class ProductAdapter(
 
     }
 
-    override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
+    override fun onBindViewHolder(
+        holder: ProductViewHolder,
+        position: Int
+    ) {
 
         val product = productList[position]
 
-        holder.txtProductName.text = product.name
-        holder.txtPrice.text = product.price
-        holder.imgProduct.setImageResource(product.image)
+        holder.txtProductName.text =
+            product.nombre
+
+        holder.txtPrice.text =
+            "$ ${product.precio}"
+
+
+        if (!product.imagen_url.isNullOrEmpty()) {
+
+            holder.imgProduct.load(
+                product.imagen_url
+            ) {
+
+                crossfade(true)
+
+                placeholder(
+                    R.drawable.tomate
+                )
+
+                error(
+                    R.drawable.tomate
+                )
+            }
+
+        } else {
+
+            holder.imgProduct.setImageResource(
+                R.drawable.tomate
+            )
+        }
+
+        holder.btnDelete.visibility =
+            if (showDeleteButton)
+                View.VISIBLE
+            else
+                View.GONE
+
+        holder.btnEdit.visibility =
+            if (showDeleteButton)
+                View.VISIBLE
+            else
+                View.GONE
 
         holder.btnView.setOnClickListener {
 
-            val context = holder.itemView.context
+            val context =
+                holder.itemView.context
 
-            context.startActivity(
-                Intent(context, ProductDetailActivity::class.java)
+//            context.startActivity(
+//                Intent(
+//                    context,
+//                    ProductDetailActivity::class.java
+//                )
+//            )
+            val intent =
+                Intent(
+                    context,
+                    ProductDetailActivity::class.java
+                )
+
+            intent.putExtra(
+                "id_producto",
+                product.id_producto
             )
+
+            context.startActivity(intent)
+        }
+
+        holder.btnDelete.visibility =
+            if (showDeleteButton)
+                View.VISIBLE
+            else
+                View.GONE
+
+        holder.btnDelete.setOnClickListener {
+
+            onDeleteClick?.invoke(product)
 
         }
 
+        holder.btnEdit.setOnClickListener {
+
+            onEditClick?.invoke(product)
+
+        }
     }
 
     override fun getItemCount(): Int {

@@ -9,6 +9,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.luagro.R
 import com.example.luagro.adapter.UserAdapter
+import com.example.luagro.model.Usuario
+import com.example.luagro.supabase.SupabaseClient.client
+import io.github.jan.supabase.postgrest.from
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class UserManagementActivity : AppCompatActivity() {
 
@@ -22,8 +29,39 @@ class UserManagementActivity : AppCompatActivity() {
         recyclerUsers.layoutManager =
             LinearLayoutManager(this)
 
-        recyclerUsers.adapter =
-            UserAdapter()
+        CoroutineScope(Dispatchers.IO).launch {
+
+            try {
+
+                val usuarios =
+                    client
+                        .from("profiles")
+                        .select {
+
+                            filter {
+                                eq("estado", true)
+                            }
+                        }
+                        .decodeList<Usuario>()
+
+                withContext(Dispatchers.Main) {
+
+                    recyclerUsers.adapter =
+                        UserAdapter(usuarios)
+                }
+
+            } catch (e: Exception) {
+
+                withContext(Dispatchers.Main) {
+
+                    android.widget.Toast.makeText(
+                        this@UserManagementActivity,
+                        e.message,
+                        android.widget.Toast.LENGTH_LONG
+                    ).show()
+                }
+            }
+        }
 
     }
 

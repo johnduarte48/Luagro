@@ -1,52 +1,58 @@
 package com.example.luagro.adapter
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.luagro.R
-import com.example.luagro.seller.OrderInfoActivity
+import com.example.luagro.model.Cart
 
+class OrderAdapter(
+    private val orders: List<Cart>
+) : RecyclerView.Adapter<OrderAdapter.OrderViewHolder>() {
 
-class OrderAdapter :
-    RecyclerView.Adapter<OrderAdapter.OrderViewHolder>() {
+    class OrderViewHolder(view: View)
+        : RecyclerView.ViewHolder(view) {
 
-    class OrderViewHolder(view: View) :
-        RecyclerView.ViewHolder(view)
+        val txtOrderId =
+            view.findViewById<TextView>(R.id.txtOrderId)
+
+        val txtOrderStatus =
+            view.findViewById<TextView>(R.id.txtOrderStatus)
+    }
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
     ): OrderViewHolder {
 
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_order, parent, false)
+        val view =
+            LayoutInflater.from(parent.context)
+                .inflate(
+                    R.layout.item_order,
+                    parent,
+                    false
+                )
 
         return OrderViewHolder(view)
-
     }
 
     override fun onBindViewHolder(
         holder: OrderViewHolder,
         position: Int
     ) {
-        holder.itemView.setOnClickListener {
 
-            val intent = Intent(
-                holder.itemView.context,
-                OrderInfoActivity::class.java
-            )
+        val order =
+            orders[position]
 
-            holder.itemView.context.startActivity(intent)
+        holder.txtOrderId.text =
+            order.id_carrito
 
-        }
+        holder.txtOrderStatus.text =
+            order.estado
     }
 
-    override fun getItemCount(): Int {
-
-        return 10
-
-    }
-
+    override fun getItemCount() =
+        orders.size
 }

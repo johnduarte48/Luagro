@@ -112,6 +112,78 @@
                 android:textSize="16sp"
                 android:layout_marginTop="8dp"/>
 
+            <!-- Origen -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Origen"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/txtOrigen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="16sp"
+                android:textColor="@color/text_secondary"/>
+
+            <!-- Stock -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stock disponible"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/txtStock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="16sp"
+                android:textColor="@color/text_secondary"/>
+
+            <!-- Categoría -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categoría"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/txtCategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="16sp"
+                android:textColor="@color/text_secondary"/>
+
+            <!-- Vendedor -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vendido por"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/txtVendedor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="16sp"
+                android:textColor="@color/text_secondary"/>
+
             <!-- Cantidad -->
 
             <TextView
@@ -142,6 +214,7 @@
                     app:cornerRadius="12dp"/>
 
                 <TextView
+                    android:id="@+id/txtQuantity"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:gravity="center"

@@ -3,12 +3,20 @@ package com.example.luagro.admin
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.luagro.R
 import com.example.luagro.seller.AddProductActivity
+import com.example.luagro.auth.LoginActivity
+import com.example.luagro.supabase.SupabaseClient.client
+import io.github.jan.supabase.gotrue.auth
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+
 
 class AdminDashboardActivity : AppCompatActivity() {
 
@@ -24,6 +32,9 @@ class AdminDashboardActivity : AppCompatActivity() {
 
         val btnProducts =
             findViewById<Button>(R.id.btnProducts)
+
+        val btnLogout =
+            findViewById<ImageButton>(R.id.btnLogout)
 
 
 
@@ -48,6 +59,26 @@ class AdminDashboardActivity : AppCompatActivity() {
             startActivity(
                 Intent(this, AddProductActivity::class.java)
             )
+        }
+
+        btnLogout.setOnClickListener {
+
+            CoroutineScope(Dispatchers.IO).launch {
+
+                client.auth.signOut()
+
+                runOnUiThread {
+
+                    startActivity(
+                        Intent(
+                            this@AdminDashboardActivity,
+                            LoginActivity::class.java
+                        )
+                    )
+
+                    finish()
+                }
+            }
         }
 
     }
