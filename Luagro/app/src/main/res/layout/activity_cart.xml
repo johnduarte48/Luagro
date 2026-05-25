@@ -24,6 +24,6 @@
         android:id="@+id/btnCheckout"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:text="Continuar compra"/>
+        android:text="@string/continuar_compra"/>
 
 </LinearLayout>

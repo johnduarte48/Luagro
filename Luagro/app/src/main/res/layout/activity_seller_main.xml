@@ -34,7 +34,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hola 👋"
+                    android:text="@string/hola8"
                     android:textStyle="bold"
                     android:textSize="28sp"
                     android:textColor="@color/text_primary"/>
@@ -42,7 +42,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Vendedor"
+                    android:text="@string/vendedor8"
                     android:textSize="18sp"
                     android:textColor="@color/text_secondary"/>
 
@@ -54,7 +54,7 @@
                 android:layout_height="60dp"
                 android:background="@android:color/transparent"
                 android:src="@android:drawable/ic_lock_power_off"
-                android:contentDescription="Cerrar sesión"/>
+                android:contentDescription="@string/cerrar_sesi_n8"/>
 
         </LinearLayout>
 
@@ -63,7 +63,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Resumen"
+            android:text="@string/resumen8"
             android:textStyle="bold"
             android:textSize="24sp"
             android:layout_marginTop="32dp"/>
@@ -93,14 +93,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="34"
+                        android:text="@string/_34"
                         android:textStyle="bold"
                         android:textSize="28sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Productos"/>
+                        android:text="@string/productos8"/>
 
                 </LinearLayout>
 
@@ -125,14 +125,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="28"
+                        android:text="@string/_28"
                         android:textStyle="bold"
                         android:textSize="28sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pedidos"/>
+                        android:text="@string/pedidos"/>
 
                 </LinearLayout>
 
@@ -156,14 +156,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$854K"
+                        android:text="@string/_854k"
                         android:textStyle="bold"
                         android:textSize="24sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Ventas"/>
+                        android:text="@string/ventas0"/>
 
                 </LinearLayout>
 
@@ -176,7 +176,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Accesos rápidos"
+            android:text="@string/accesos_r_pidos"
             android:textStyle="bold"
             android:textSize="24sp"
             android:layout_marginTop="32dp"/>
@@ -187,7 +187,7 @@
             android:id="@+id/btnProducts"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:text="Mis productos"
+            android:text="@string/mis_productos"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:background="@drawable/rounded_button"
@@ -197,7 +197,7 @@
             android:id="@+id/btnOrders"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:text="Pedidos recibidos"
+            android:text="@string/pedidos_recibidos4"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:background="@drawable/rounded_button"
@@ -207,7 +207,7 @@
             android:id="@+id/btnAddProduct"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:text="Agregar producto"
+            android:text="@string/agregar_producto"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:background="@drawable/rounded_button"
@@ -217,7 +217,7 @@
             android:id="@+id/btnProfile"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:text="Mi perfil"
+            android:text="@string/mi_perfil"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:background="@drawable/rounded_button"

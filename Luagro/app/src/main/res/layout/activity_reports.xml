@@ -34,7 +34,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Reporte de ventas"
+                    android:text="@string/reporte_de_ventas7"
                     android:textStyle="bold"
                     android:textSize="28sp"
                     android:textColor="@color/text_primary"/>
@@ -42,7 +42,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Administrador"
+                    android:text="@string/administrador7"
                     android:textSize="18sp"
                     android:textColor="@color/text_secondary"/>
 
@@ -68,7 +68,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="$12.500.000"
+                    android:text="@string/_12_500_0007"
                     android:textStyle="bold"
                     android:textSize="32sp"
                     android:textColor="@color/primary_green"/>
@@ -76,7 +76,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ventas mensuales"
+                    android:text="@string/ventas_mensuales"
                     android:textSize="16sp"/>
 
             </LinearLayout>
@@ -88,7 +88,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Resumen"
+            android:text="@string/resumen"
             android:textStyle="bold"
             android:textSize="22sp"
             android:layout_marginTop="32dp"/>
@@ -96,21 +96,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="• Productos vendidos: 230"
+            android:text="@string/productos_vendidos_230"
             android:textSize="16sp"
             android:layout_marginTop="16dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="• Usuarios registrados: 540"
+            android:text="@string/usuarios_registrados_540"
             android:textSize="16sp"
             android:layout_marginTop="8dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="• Pedidos procesados: 120"
+            android:text="@string/pedidos_procesados_120"
             android:textSize="16sp"
             android:layout_marginTop="8dp"/>
 

@@ -36,7 +36,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hola, Usuario 👋"
+                    android:text="@string/hola_usuario"
                     android:textSize="28sp"
                     android:textStyle="bold"
                     android:textColor="@color/text_primary"/>
@@ -44,7 +44,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="📍 Bogotá, Colombia"
+                    android:text="@string/bogot_colombia3"
                     android:textSize="16sp"
                     android:textColor="@color/text_secondary"
                     android:layout_marginTop="4dp"/>
@@ -84,7 +84,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Tomates Orgánicos"
+                        android:text="@string/tomates_org_nicos"
                         android:textStyle="bold"
                         android:textSize="18sp"
                         android:textColor="@color/text_primary"/>
@@ -92,7 +92,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$12.000"
+                        android:text="@string/_12_000"
                         android:textColor="@color/primary_green"
                         android:textStyle="bold"
                         android:textSize="18sp"
@@ -101,7 +101,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Cantidad: 1"
+                        android:text="@string/cantidad_1"
                         android:textColor="@color/text_secondary"
                         android:layout_marginTop="8dp"/>
 
@@ -116,7 +116,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dirección de entrega"
+            android:text="@string/direcci_n_de_entrega3"
             android:textStyle="bold"
             android:textSize="18sp"
             android:textColor="@color/text_primary"
@@ -125,7 +125,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:hint="Ingresa tu dirección"
+            android:hint="@string/ingresa_tu_direcci_n"
             android:background="@drawable/input_background"
             android:padding="16dp"
             android:layout_marginTop="12dp"/>
@@ -135,7 +135,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Método de pago"
+            android:text="@string/m_todo_de_pago"
             android:textStyle="bold"
             android:textSize="18sp"
             android:textColor="@color/text_primary"
@@ -149,17 +149,17 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tarjeta crédito"/>
+                android:text="@string/tarjeta_cr_dito"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PSE"/>
+                android:text="@string/pse"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Contra entrega"/>
+                android:text="@string/contra_entrega"/>
 
         </RadioGroup>
 
@@ -175,14 +175,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Total"
+                android:text="@string/total3"
                 android:textStyle="bold"
                 android:textSize="22sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$12.000"
+                android:text="@string/_12_0004"
                 android:textStyle="bold"
                 android:textSize="22sp"
                 android:textColor="@color/primary_green"/>
@@ -195,7 +195,7 @@
             android:id="@+id/btnPay"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:text="Confirmar pago"
+            android:text="@string/confirmar_pago"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textAllCaps="false"

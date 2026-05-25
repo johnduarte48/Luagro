@@ -75,7 +75,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Agregar imagen"
+                        android:text="@string/agregar_imagen"
                         android:textSize="22sp"
                         android:textColor="@color/text_primary"
                         android:layout_marginTop="12dp"/>
@@ -89,7 +89,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre del producto"
+                android:text="@string/nombre_del_producto"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginTop="24dp"/>
@@ -98,7 +98,7 @@
                 android:id="@+id/etNombre"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:hint="Nombre de producto"
+                android:hint="@string/nombre_de_producto"
                 android:padding="16dp"
                 android:background="@drawable/input_background"
                 android:layout_marginTop="8dp"/>
@@ -108,7 +108,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Precio (COP)"
+                android:text="@string/precio_cop"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginTop="24dp"/>
@@ -117,7 +117,7 @@
                 android:id="@+id/etPrecio"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:hint="$0"
+                android:hint="@string/_0"
                 android:inputType="number"
                 android:padding="16dp"
                 android:background="@drawable/input_background"
@@ -128,7 +128,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Categoría"
+                android:text="@string/categor_a"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginTop="24dp"/>
@@ -145,7 +145,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Descripción"
+                android:text="@string/descripci_n"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginTop="24dp"/>
@@ -155,7 +155,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:gravity="top"
-                android:hint="Descripción del producto"
+                android:hint="@string/descripci_n_del_producto"
                 android:padding="16dp"
                 android:background="@drawable/input_background"
                 android:layout_marginTop="8dp"/>
@@ -165,7 +165,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Origen / finca"
+                android:text="@string/origen_finca"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginTop="24dp"/>
@@ -174,7 +174,7 @@
                 android:id="@+id/etOrigen"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:hint="Origen del producto"
+                android:hint="@string/origen_del_producto"
                 android:padding="16dp"
                 android:background="@drawable/input_background"
                 android:layout_marginTop="8dp"/>
@@ -184,7 +184,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Stock disponible"
+                android:text="@string/stock_disponible"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginTop="24dp"/>
@@ -193,7 +193,7 @@
                 android:id="@+id/etStock"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:hint="Cantidad disponible"
+                android:hint="@string/cantidad_disponible"
                 android:inputType="number"
                 android:padding="16dp"
                 android:background="@drawable/input_background"
@@ -207,7 +207,7 @@
                 android:layout_height="56dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginBottom="24dp"
-                android:text="Guardar producto"
+                android:text="@string/guardar_producto"
                 android:textAllCaps="false"
                 android:textStyle="bold"
                 android:textColor="@color/white"

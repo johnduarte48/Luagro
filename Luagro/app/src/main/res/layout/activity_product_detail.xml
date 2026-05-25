@@ -33,7 +33,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hola, Usuario 👋"
+                    android:text="@string/hola_usuario4"
                     android:textSize="28sp"
                     android:textStyle="bold"
                     android:textColor="@color/text_primary"/>
@@ -41,7 +41,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="📍 Bogotá, Colombia"
+                    android:text="@string/bogot_colombia4"
                     android:textSize="16sp"
                     android:textColor="@color/text_secondary"
                     android:layout_marginTop="4dp"/>
@@ -73,7 +73,7 @@
                 android:id="@+id/txtProductName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tomates Orgánicos"
+                android:text="@string/tomates_org_nicos4"
                 android:textColor="@color/text_primary"
                 android:textStyle="bold"
                 android:textSize="26sp"/>
@@ -84,7 +84,7 @@
                 android:id="@+id/txtPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$12.000"
+                android:text="@string/_12_0005"
                 android:textColor="@color/primary_green"
                 android:textStyle="bold"
                 android:textSize="22sp"
@@ -95,7 +95,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Descripción"
+                android:text="@string/descripci_n4"
                 android:textColor="@color/text_primary"
                 android:textStyle="bold"
                 android:textSize="18sp"
@@ -107,7 +107,7 @@
                 android:id="@+id/txtDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Producto orgánico cultivado sin pesticidas. Fresco, saludable y directo del productor."
+                android:text="@string/producto_org_nico_cultivado_sin_pesticidas_fresco_saludable_y_directo_del_productor"
                 android:textColor="@color/text_secondary"
                 android:textSize="16sp"
                 android:layout_marginTop="8dp"/>
@@ -117,7 +117,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Origen"
+                android:text="@string/origen"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginTop="20dp"/>
@@ -126,7 +126,7 @@
                 android:id="@+id/txtOrigen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-"
+                android:text="@string/signo1"
                 android:textSize="16sp"
                 android:textColor="@color/text_secondary"/>
 
@@ -135,7 +135,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Stock disponible"
+                android:text="@string/stock_disponible5"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginTop="20dp"/>
@@ -144,7 +144,7 @@
                 android:id="@+id/txtStock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-"
+                android:text="@string/signo2"
                 android:textSize="16sp"
                 android:textColor="@color/text_secondary"/>
 
@@ -153,7 +153,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Categoría"
+                android:text="@string/categor_a5"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginTop="20dp"/>
@@ -162,7 +162,7 @@
                 android:id="@+id/txtCategoria"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-"
+                android:text="@string/signo3"
                 android:textSize="16sp"
                 android:textColor="@color/text_secondary"/>
 
@@ -171,7 +171,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vendido por"
+                android:text="@string/vendido_por"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginTop="20dp"/>
@@ -180,7 +180,7 @@
                 android:id="@+id/txtVendedor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-"
+                android:text="@string/signo4"
                 android:textSize="16sp"
                 android:textColor="@color/text_secondary"/>
 
@@ -189,7 +189,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cantidad"
+                android:text="@string/cantidad"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginTop="24dp"/>
@@ -206,7 +206,7 @@
                     android:id="@+id/btnDecrease"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:text="-"
+                    android:text="@string/signo5"
                     android:textSize="24sp"
                     android:textStyle="bold"
                     android:textColor="@color/white"
@@ -218,7 +218,7 @@
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:gravity="center"
-                    android:text="1"
+                    android:text="@string/_1"
                     android:textSize="18sp"
                     android:textStyle="bold"/>
 
@@ -226,7 +226,7 @@
                     android:id="@+id/btnIncrease"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:text="+"
+                    android:text="@string/signo6"
                     android:textSize="24sp"
                     android:textStyle="bold"
                     android:textColor="@color/white"
@@ -241,7 +241,7 @@
                 android:id="@+id/btnAddCart"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:text="Agregar al carrito"
+                android:text="@string/agregar_al_carrito"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textAllCaps="false"

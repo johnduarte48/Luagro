@@ -35,7 +35,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mi perfíl"
+                    android:text="@string/mi_perf_l"
                     android:textStyle="bold"
                     android:textSize="28sp"
                     android:textColor="@color/text_primary"/>
@@ -65,7 +65,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Juan Pérez"
+            android:text="@string/juan_p_rez"
             android:textStyle="bold"
             android:textSize="24sp"
             android:textColor="@color/text_primary"
@@ -76,7 +76,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="juan@email.com"
+            android:text="@string/juan_email_com"
             android:textSize="16sp"
             android:textColor="@color/text_secondary"
             android:layout_marginTop="8dp"/>
@@ -86,7 +86,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:text="Editar perfil"
+            android:text="@string/editar_perfil"
             android:textColor="@color/white"
             android:textAllCaps="false"
             android:background="@drawable/rounded_button"
@@ -96,7 +96,7 @@
             android:id="@+id/btnLogout"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:text="Cerrar sesión"
+            android:text="@string/cerrar_sesi_n6"
             android:textColor="@color/white"
             android:textAllCaps="false"
             android:background="@drawable/rounded_button"

@@ -24,7 +24,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¡Compra realizada!"
+        android:text="@string/compra_realizada"
         android:textStyle="bold"
         android:textSize="28sp"
         android:textColor="@color/text_primary"
@@ -35,7 +35,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tu pedido fue procesado exitosamente."
+        android:text="@string/tu_pedido_fue_procesado_exitosamente"
         android:textSize="16sp"
         android:textColor="@color/text_secondary"
         android:gravity="center"
@@ -46,7 +46,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pedido #LUA2026"
+        android:text="@string/pedido_lua2026"
         android:textStyle="bold"
         android:textSize="18sp"
         android:textColor="@color/primary_green"
@@ -58,7 +58,7 @@
         android:id="@+id/btnBackHome"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:text="Volver al inicio"
+        android:text="@string/volver_al_inicio"
         android:textColor="@color/white"
         android:textAllCaps="false"
         android:textSize="16sp"

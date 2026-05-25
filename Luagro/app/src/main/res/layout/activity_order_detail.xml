@@ -26,7 +26,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Pedidos recibidos"
+            android:text="@string/pedidos_recibidos"
             android:textStyle="bold"
             android:textSize="28sp"
             android:textColor="@color/text_primary"
@@ -67,7 +67,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2"
+                    android:text="@string/_2"
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     android:textSize="24sp"/>
@@ -75,7 +75,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pendientes"
+                    android:text="@string/pendientes"
                     android:textColor="@color/white"/>
 
             </LinearLayout>
@@ -101,7 +101,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Enviados"
+                    android:text="@string/enviados"
                     android:textStyle="bold"
                     android:textColor="@color/text_primary"/>
 
@@ -127,7 +127,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Entregados"
+                    android:text="@string/entregados"
                     android:textStyle="bold"
                     android:textColor="@color/text_primary"/>
 

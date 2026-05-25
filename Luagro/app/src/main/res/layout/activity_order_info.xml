@@ -34,14 +34,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pedido"
+                    android:text="@string/pedido"
                     android:textSize="22sp"
                     android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="#LA2026-013489"
+                    android:text="@string/la2026_013489"
                     android:textSize="30sp"
                     android:textStyle="bold"/>
 
@@ -59,7 +59,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pendiente"
+            android:text="@string/pendiente"
             android:textStyle="bold"
             android:textColor="#8A5A00"
             android:background="#FFE5B4"
@@ -80,7 +80,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cliente"
+            android:text="@string/cliente"
             android:textStyle="bold"
             android:textSize="24sp"
             android:layout_marginTop="24dp"/>
@@ -88,21 +88,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pedro Lopez"
+            android:text="@string/pedro_lopez"
             android:textSize="18sp"
             android:layout_marginTop="12dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="pedro.lopez@correo.com"
+            android:text="@string/pedro_lopez_correo_com"
             android:textSize="18sp"
             android:layout_marginTop="4dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="315 5478866"
+            android:text="@string/_315_5478866"
             android:textSize="18sp"
             android:layout_marginTop="4dp"/>
 
@@ -111,7 +111,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Productos"
+            android:text="@string/productos"
             android:textStyle="bold"
             android:textSize="24sp"
             android:layout_marginTop="32dp"/>
@@ -147,14 +147,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Tomate orgánico"
+                        android:text="@string/tomate_org_nico"
                         android:textStyle="bold"
                         android:textSize="20sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$ 8.400"
+                        android:text="@string/_8_400"
                         android:textStyle="bold"
                         android:textColor="@color/primary_green"
                         android:textSize="20sp"
@@ -163,7 +163,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="2kg"
+                        android:text="@string/_2kg"
                         android:textSize="18sp"
                         android:layout_marginTop="4dp"/>
 
@@ -185,14 +185,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Total"
+                android:text="@string/total"
                 android:textStyle="bold"
                 android:textSize="24sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$15.800"
+                android:text="@string/_15_800"
                 android:textStyle="bold"
                 android:textSize="24sp"/>
 
@@ -211,7 +211,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dirección de entrega"
+            android:text="@string/direcci_n_de_entrega"
             android:textStyle="bold"
             android:textSize="24sp"
             android:layout_marginTop="24dp"/>
@@ -219,14 +219,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Calle 1 #2-3 Torre 5 Apto 902"
+            android:text="@string/calle_1_2_3_torre_5_apto_902"
             android:textSize="18sp"
             android:layout_marginTop="16dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bogotá, Colombia"
+            android:text="@string/bogot_colombia2"
             android:textSize="18sp"
             android:layout_marginTop="8dp"/>
 
@@ -237,7 +237,7 @@
             android:layout_height="56dp"
             android:layout_marginTop="32dp"
             android:layout_marginBottom="24dp"
-            android:text="Marcar como enviado"
+            android:text="@string/marcar_como_enviado"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textAllCaps="false"

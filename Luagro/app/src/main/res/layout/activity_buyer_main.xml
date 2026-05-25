@@ -43,7 +43,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Hola 👋"
+                        android:text="@string/hola2"
                         android:textSize="28sp"
                         android:textStyle="bold"
                         android:textColor="@color/text_primary"/>
@@ -51,7 +51,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="📍 Bogotá, Colombia"
+                        android:text="@string/bogot_colombia"
                         android:textSize="16sp"
                         android:textColor="@color/text_secondary"
                         android:layout_marginTop="4dp"/>
@@ -64,7 +64,7 @@
                     android:layout_height="60dp"
                     android:background="@android:color/transparent"
                     android:src="@android:drawable/ic_lock_power_off"
-                    android:contentDescription="Cerrar sesión"/>
+                    android:contentDescription="@string/cerrar_sesi_n2"/>
 
             </LinearLayout>
 
@@ -74,7 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginTop="24dp"
-                android:hint="Buscar productos..."
+                android:hint="@string/buscar_productos"
                 android:padding="16dp"
                 android:background="@drawable/input_background"/>
 
@@ -89,7 +89,7 @@
                     android:layout_width="0dp"
                     android:layout_height="56dp"
                     android:layout_weight="1"
-                    android:text="Mi carrito"
+                    android:text="@string/mi_carrito"
                     android:textAllCaps="false"/>
 
                 <Button
@@ -98,7 +98,7 @@
                     android:layout_height="56dp"
                     android:layout_weight="1"
                     android:layout_marginStart="8dp"
-                    android:text="Mis compras"
+                    android:text="@string/mis_compras"
                     android:textAllCaps="false"/>
 
             </LinearLayout>
@@ -115,14 +115,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Categorías"
+                    android:text="@string/categor_as"
                     android:textStyle="bold"
                     android:textSize="24sp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ver todas"
+                    android:text="@string/ver_todas"
                     android:textColor="@color/primary_green"/>
 
             </LinearLayout>
@@ -147,7 +147,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Productos destacados"
+                    android:text="@string/productos_destacados"
                     android:textStyle="bold"
                     android:textSize="24sp"/>
 
@@ -155,7 +155,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Ver todas"
+                    android:text="@string/ver_todas2"
                     android:textColor="@color/primary_green"/>
 
             </LinearLayout>
